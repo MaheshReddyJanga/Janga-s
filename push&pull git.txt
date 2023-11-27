@@ -1,0 +1,208 @@
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (master)
+$ echo "# java" >> README.md
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/91950/OneDrive/Pictures/Desktop/repo/.git/
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (master)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (master)
+$  git commit -m "first commit"
+[master 27a1106] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (master)
+$  git branch -M main
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (main)
+$ git remote add origin https://github.com/MaheshReddyJanga/java.git
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (main)
+$   git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 762 bytes | 762.00 KiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/MaheshReddyJanga/java.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (main)
+$ git clone https://github.com/Kaleakash/MphesisJavaFullStackNov2023Batch-.git
+Cloning into 'MphesisJavaFullStackNov2023Batch-'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (main)
+$ touch python.txt
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (main)
+$ git commit -m "python"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        MphesisJavaFullStackNov2023Batch-/
+        python.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (main)
+$ git add .
+warning: adding embedded git repository: MphesisJavaFullStackNov2023Batch-
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> MphesisJavaFullStackNov2023Batch-
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached MphesisJavaFullStackNov2023Batch-
+hint:
+hint: See "git help submodule" for more information.
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (main)
+$ git commit -m "python"
+[main b98ab5e] python
+ 2 files changed, 1 insertion(+)
+ create mode 160000 MphesisJavaFullStackNov2023Batch-
+ create mode 100644 python.txt
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (main)
+$ git remote add origin https://github.com/MaheshReddyJanga/java.git
+error: remote origin already exists.
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (main)
+$   git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 385 bytes | 385.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MaheshReddyJanga/java.git
+   27a1106..b98ab5e  main -> main
+branch 'main' set up to track 'origin/main'.
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (main)
+$ git checkout abc
+error: pathspec 'abc' did not match any file(s) known to git
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (main)
+$ git branch dev1
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (main)
+$ git checkout dev1
+Switched to branch 'dev1'
+M       MphesisJavaFullStackNov2023Batch-
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (dev1)
+$ git status
+On branch dev1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   MphesisJavaFullStackNov2023Batch- (new commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        html.txt.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (dev1)
+$ git add .
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (dev1)
+$ git commit -m "added"
+[dev1 0459306] added
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ create mode 100644 html.txt.txt
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (dev1)
+$ git status
+On branch dev1
+nothing to commit, working tree clean
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (dev1)
+$ git push -u origin dev1
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 282 bytes | 282.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'dev1' on GitHub by visiting:
+remote:      https://github.com/MaheshReddyJanga/java/pull/new/dev1
+remote:
+To https://github.com/MaheshReddyJanga/java.git
+ * [new branch]      dev1 -> dev1
+branch 'dev1' set up to track 'origin/dev1'.
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (dev1)
+$ git checkout main
+Switched to branch 'main'
+M       MphesisJavaFullStackNov2023Batch-
+Your branch is up to date with 'origin/main'.
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (main)
+$ git checkout dev1
+Switched to branch 'dev1'
+Your branch is up to date with 'origin/dev1'.
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (dev1)
+$ git checkout main
+Switched to branch 'main'
+M       MphesisJavaFullStackNov2023Batch-
+Your branch is up to date with 'origin/main'.
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (main)
+$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 622 bytes | 311.00 KiB/s, done.
+From https://github.com/MaheshReddyJanga/java
+   b98ab5e..5a27251  main       -> origin/main
+Updating b98ab5e..5a27251
+Fast-forward
+ MphesisJavaFullStackNov2023Batch- | 2 +-
+ html.txt.txt                      | 0
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ create mode 100644 html.txt.txt
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (main)
+$ git branch -D dev1
+Deleted branch dev1 (was 0459306).
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (main)
+$ git branch
+* main
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo (main)

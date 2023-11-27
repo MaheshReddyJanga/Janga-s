@@ -1,0 +1,55 @@
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo/MphesisJavaFullStackNov2023Batch- (main)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 313 bytes | 26.00 KiB/s, done.
+From https://github.com/Kaleakash/MphesisJavaFullStackNov2023Batch-
+   c0976b5..da1f3b1  main       -> origin/main
+Updating c0976b5..da1f3b1
+Fast-forward
+ info | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 info
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo/MphesisJavaFullStackNov2023Batch- (main)
+$ git branch abc
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo/MphesisJavaFullStackNov2023Batch- (main)
+$ git checkout abc
+Switched to branch 'abc'
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo/MphesisJavaFullStackNov2023Batch- (abc)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo/MphesisJavaFullStackNov2023Batch- (main)
+$ git pull
+Already up to date.
+
+91950@LAPTOP-G5DCBEPA MINGW64 ~/OneDrive/Pictures/Desktop/repo/MphesisJavaFullStackNov2023Batch- (main)
+$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 6.11 MiB | 2.58 MiB/s, done.
+From https://github.com/Kaleakash/MphesisJavaFullStackNov2023Batch-
+   da1f3b1..81f718a  main       -> origin/main
+Updating da1f3b1..81f718a
+Fast-forward
+ 20 Nov 2023 Notes.pdf                               | Bin 0 -> 66264 bytes
+ 21 Nov 2023 Notes.pdf                               | Bin 0 -> 128242 bytes
+ Computer_Fundamentals (Module_One).pptx             | Bin 0 -> 3467030 bytes
+ Computer_Fundamentals (Module_Two) [Autosaved].pptx | Bin 0 -> 3024869 bytes
+ abc.txt                                             |   2 --
+ info                                                |   1 -
+ 6 files changed, 3 deletions(-)
+ create mode 100644 20 Nov 2023 Notes.pdf
+ create mode 100644 21 Nov 2023 Notes.pdf
+ create mode 100644 Computer_Fundamentals (Module_One).pptx
+ create mode 100644 Computer_Fundamentals (Module_Two) [Autosaved].pptx
+ delete mode 100644 abc.txt
